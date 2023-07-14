@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.3 on win32)" generated="20230714 15:50:05.246" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.11.3 on win32)" generated="20230714 17:26:32.641" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="C:\Users\Suhas.Panhalkar\OneDrive - Reliance Corporate IT Park Limited\Documents\GitHub\MP_Demo_TC\mp demo automation\Tests\main.robot">
 <test id="s1-t1" name="TestCase ID:147590" line="8">
 <kw name="Begin TestCase" library="common">
@@ -7,304 +7,327 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230714 15:50:05.785" level="INFO">Opening browser 'chrome' to base url 'https://stage.narendramodi.in/'.</msg>
-<status status="PASS" starttime="20230714 15:50:05.785" endtime="20230714 15:50:14.181"/>
+<msg timestamp="20230714 17:26:33.176" level="INFO">Opening browser 'chrome' to base url 'https://stage.narendramodi.in/'.</msg>
+<status status="PASS" starttime="20230714 17:26:33.176" endtime="20230714 17:26:40.700"/>
 </kw>
 <kw name="Location Should Be" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<msg timestamp="20230714 15:50:14.185" level="INFO">Current location is 'https://stage.narendramodi.in/'.</msg>
-<status status="PASS" starttime="20230714 15:50:14.181" endtime="20230714 15:50:14.185"/>
+<msg timestamp="20230714 17:26:40.707" level="INFO">Current location is 'https://stage.narendramodi.in/'.</msg>
+<status status="PASS" starttime="20230714 17:26:40.700" endtime="20230714 17:26:40.707"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 15:50:14.185" endtime="20230714 15:50:14.305"/>
+<status status="PASS" starttime="20230714 17:26:40.707" endtime="20230714 17:26:40.827"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>1s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230714 15:50:14.305" endtime="20230714 15:50:14.305"/>
+<status status="PASS" starttime="20230714 17:26:40.827" endtime="20230714 17:26:40.827"/>
 </kw>
-<status status="PASS" starttime="20230714 15:50:05.785" endtime="20230714 15:50:14.305"/>
+<status status="PASS" starttime="20230714 17:26:33.176" endtime="20230714 17:26:40.827"/>
 </kw>
 <kw name="Click on Login" library="key">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://a[@id="nmlogin"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:14.305" level="INFO">Clicking element 'xpath://a[@id="nmlogin"]'.</msg>
-<status status="PASS" starttime="20230714 15:50:14.305" endtime="20230714 15:50:16.384"/>
+<msg timestamp="20230714 17:26:40.827" level="INFO">Clicking element 'xpath://a[@id="nmlogin"]'.</msg>
+<status status="PASS" starttime="20230714 17:26:40.827" endtime="20230714 17:26:42.903"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>xpath://div[@class="form-horizontal SignPopup"][1]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230714 15:50:17.401" level="INFO">Current page contains element 'xpath://div[@class="form-horizontal SignPopup"][1]'.</msg>
-<status status="PASS" starttime="20230714 15:50:16.384" endtime="20230714 15:50:17.401"/>
+<msg timestamp="20230714 17:26:43.925" level="INFO">Current page contains element 'xpath://div[@class="form-horizontal SignPopup"][1]'.</msg>
+<status status="PASS" starttime="20230714 17:26:42.903" endtime="20230714 17:26:43.925"/>
 </kw>
-<status status="PASS" starttime="20230714 15:50:14.305" endtime="20230714 15:50:17.401"/>
+<status status="PASS" starttime="20230714 17:26:40.827" endtime="20230714 17:26:43.925"/>
 </kw>
 <kw name="Enter credentials and login" library="key">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://input[@id="email_address"]</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:17.401" level="INFO">Typing text 'manasmp9090@gmail.com' into text field 'xpath://input[@id="email_address"]'.</msg>
-<status status="PASS" starttime="20230714 15:50:17.401" endtime="20230714 15:50:20.527"/>
+<msg timestamp="20230714 17:26:43.925" level="INFO">Typing text 'manasmp9090@gmail.com' into text field 'xpath://input[@id="email_address"]'.</msg>
+<status status="PASS" starttime="20230714 17:26:43.925" endtime="20230714 17:26:47.049"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://input[@id="password"]</arg>
 <arg>${pass}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:20.527" level="INFO">Typing text 'nam0@mpC' into text field 'xpath://input[@id="password"]'.</msg>
-<status status="PASS" starttime="20230714 15:50:20.527" endtime="20230714 15:50:23.639"/>
+<msg timestamp="20230714 17:26:47.049" level="INFO">Typing text 'nam0@mpC' into text field 'xpath://input[@id="password"]'.</msg>
+<status status="PASS" starttime="20230714 17:26:47.049" endtime="20230714 17:26:50.149"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[@id="login_button1"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:23.640" level="INFO">Clicking element 'xpath://button[@id="login_button1"]'.</msg>
-<status status="PASS" starttime="20230714 15:50:23.639" endtime="20230714 15:50:25.703"/>
+<msg timestamp="20230714 17:26:50.149" level="INFO">Clicking element 'xpath://button[@id="login_button1"]'.</msg>
+<status status="PASS" starttime="20230714 17:26:50.149" endtime="20230714 17:26:52.221"/>
 </kw>
 <kw name="Location Should Be" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<msg timestamp="20230714 15:50:28.305" level="INFO">Current location is 'https://stage.narendramodi.in/'.</msg>
-<status status="PASS" starttime="20230714 15:50:25.703" endtime="20230714 15:50:28.305"/>
+<msg timestamp="20230714 17:26:54.464" level="INFO">Current location is 'https://stage.narendramodi.in/'.</msg>
+<status status="PASS" starttime="20230714 17:26:52.221" endtime="20230714 17:26:54.464"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>xpath://a//span[@data-hover="Mera saansad"]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230714 15:50:28.305" endtime="20230714 15:50:29.321"/>
+<status status="PASS" starttime="20230714 17:26:54.464" endtime="20230714 17:26:55.480"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://div[@class="app"]//a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:29.321" level="INFO">Clicking element 'xpath://div[@class="app"]//a'.</msg>
-<status status="PASS" starttime="20230714 15:50:29.321" endtime="20230714 15:50:31.423"/>
+<msg timestamp="20230714 17:26:55.480" level="INFO">Clicking element 'xpath://div[@class="app"]//a'.</msg>
+<status status="PASS" starttime="20230714 17:26:55.480" endtime="20230714 17:26:57.584"/>
 </kw>
-<status status="PASS" starttime="20230714 15:50:17.401" endtime="20230714 15:50:31.423"/>
+<status status="PASS" starttime="20230714 17:26:43.925" endtime="20230714 17:26:57.584"/>
 </kw>
 <kw name="Verify Url after login" library="key">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>locator=NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230714 15:50:31.423" endtime="20230714 15:50:35.437"/>
+<status status="PASS" starttime="20230714 17:26:57.584" endtime="20230714 17:27:01.599"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230714 15:50:39.438" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20230714 15:50:35.437" endtime="20230714 15:50:39.438"/>
+<msg timestamp="20230714 17:27:05.600" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230714 17:27:01.599" endtime="20230714 17:27:05.600"/>
 </kw>
 <kw name="Location Should Be" library="SeleniumLibrary">
 <arg>${mpurl}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<msg timestamp="20230714 15:50:40.446" level="INFO">Current location is 'https://mpcorneruat.narendramodi.in/MpHome'.</msg>
-<status status="PASS" starttime="20230714 15:50:39.438" endtime="20230714 15:50:40.446"/>
+<msg timestamp="20230714 17:27:06.608" level="INFO">Current location is 'https://mpcorneruat.narendramodi.in/MpHome'.</msg>
+<status status="PASS" starttime="20230714 17:27:05.600" endtime="20230714 17:27:06.608"/>
 </kw>
-<status status="PASS" starttime="20230714 15:50:31.423" endtime="20230714 15:50:40.446"/>
+<status status="PASS" starttime="20230714 17:26:57.584" endtime="20230714 17:27:06.608"/>
 </kw>
 <kw name="Close what's new popup" library="key">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>xpath://div[@role='presentation']//h1[1]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230714 15:50:40.446" endtime="20230714 15:50:41.461"/>
+<status status="PASS" starttime="20230714 17:27:06.608" endtime="20230714 17:27:07.625"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://img[@class="closeIcon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:41.461" level="INFO">Clicking element 'xpath://img[@class="closeIcon"]'.</msg>
-<status status="PASS" starttime="20230714 15:50:41.461" endtime="20230714 15:50:43.522"/>
+<msg timestamp="20230714 17:27:07.625" level="INFO">Clicking element 'xpath://img[@class="closeIcon"]'.</msg>
+<status status="PASS" starttime="20230714 17:27:07.625" endtime="20230714 17:27:09.687"/>
 </kw>
-<status status="PASS" starttime="20230714 15:50:40.446" endtime="20230714 15:50:43.522"/>
+<status status="PASS" starttime="20230714 17:27:06.608" endtime="20230714 17:27:09.687"/>
 </kw>
 <kw name="Create a project under &quot;Development Project&quot;" library="key">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=(//li[@class="justify-content-between"]/button)[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:43.522" level="INFO">Clicking element 'xpath=(//li[@class="justify-content-between"]/button)[2]'.</msg>
-<status status="PASS" starttime="20230714 15:50:43.522" endtime="20230714 15:50:45.599"/>
+<msg timestamp="20230714 17:27:09.687" level="INFO">Clicking element 'xpath=(//li[@class="justify-content-between"]/button)[2]'.</msg>
+<status status="PASS" starttime="20230714 17:27:09.687" endtime="20230714 17:27:11.757"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=(//div[@class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7.5 css-shfgwp"])[4]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230714 17:27:11.757" endtime="20230714 17:27:13.103"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>xpath=(//div[@class="MuiGrid-root MuiGrid-container css-1d3bbye"])[5]</arg>
+<arg>xpath=(//div[@class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7.5 css-shfgwp"])[4]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230714 15:50:45.599" endtime="20230714 15:50:47.928"/>
+<status status="PASS" starttime="20230714 17:27:13.103" endtime="20230714 17:27:15.408"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=(//div[@class="anotwe"]/div[1]/button)[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:47.928" level="INFO">Clicking element 'xpath=(//div[@class="anotwe"]/div[1]/button)[3]'.</msg>
-<status status="PASS" starttime="20230714 15:50:47.928" endtime="20230714 15:50:50.140"/>
+<msg timestamp="20230714 17:27:15.425" level="INFO">Clicking element 'xpath=(//div[@class="anotwe"]/div[1]/button)[3]'.</msg>
+<status status="PASS" starttime="20230714 17:27:15.408" endtime="20230714 17:27:17.559"/>
 </kw>
+<status status="PASS" starttime="20230714 17:27:09.687" endtime="20230714 17:27:17.559"/>
+</kw>
+<kw name="Enter title for the project" library="key">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//input[@class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng"]</arg>
 <arg>Clean Mumbai</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:50.140" level="INFO">Typing text 'Clean Mumbai' into text field 'xpath=//input[@class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng"]'.</msg>
-<status status="PASS" starttime="20230714 15:50:50.140" endtime="20230714 15:50:53.263"/>
+<msg timestamp="20230714 17:27:17.559" level="INFO">Typing text 'Clean Mumbai' into text field 'xpath=//input[@class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng"]'.</msg>
+<status status="PASS" starttime="20230714 17:27:17.559" endtime="20230714 17:27:20.705"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//div[@class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1nvf7g0"]/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:53.263" level="INFO">Clicking button 'xpath=//div[@class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1nvf7g0"]/button'.</msg>
-<status status="PASS" starttime="20230714 15:50:53.263" endtime="20230714 15:50:58.456"/>
+<status status="PASS" starttime="20230714 17:27:17.559" endtime="20230714 17:27:20.705"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=(//button[@class="MuiButtonBase-root MuiPickersDay-root MuiPickersDay-dayWithMargin css-ub1r1"])[13]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 15:50:58.457" level="INFO">Clicking button 'xpath=(//button[@class="MuiButtonBase-root MuiPickersDay-root MuiPickersDay-dayWithMargin css-ub1r1"])[13]'.</msg>
-<status status="PASS" starttime="20230714 15:50:58.456" endtime="20230714 15:51:03.648"/>
+<kw name="Select date for the project" library="key">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@aria-label="Choose date"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 17:27:20.705" level="INFO">Clicking element 'xpath://button[@aria-label="Choose date"]'.</msg>
+<status status="PASS" starttime="20230714 17:27:20.705" endtime="20230714 17:27:22.874"/>
 </kw>
-<status status="PASS" starttime="20230714 15:50:43.522" endtime="20230714 15:51:03.648"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[@class="MuiPickersCalendarHeader-labelContainer css-l0iinn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 17:27:22.874" level="INFO">Clicking element 'xpath=//div[@class="MuiPickersCalendarHeader-labelContainer css-l0iinn"]'.</msg>
+<status status="PASS" starttime="20230714 17:27:22.874" endtime="20230714 17:27:25.036"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),"2024")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 17:27:25.036" level="INFO">Clicking element 'xpath=//button[contains(text(),"2024")]'.</msg>
+<status status="PASS" starttime="20230714 17:27:25.036" endtime="20230714 17:27:27.202"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@role="gridcell"][contains(text(),"8")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 17:27:27.202" level="INFO">Clicking element 'xpath=//button[@role="gridcell"][contains(text(),"8")]'.</msg>
+<status status="PASS" starttime="20230714 17:27:27.202" endtime="20230714 17:27:29.346"/>
+</kw>
+<status status="PASS" starttime="20230714 17:27:20.705" endtime="20230714 17:27:29.346"/>
 </kw>
 <kw name="Select one of the options from the dropdown" library="key">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//div[@aria-labelledby="mui-component-select-status"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:51:03.648" level="INFO">Clicking element 'xpath=//div[@aria-labelledby="mui-component-select-status"]'.</msg>
-<status status="PASS" starttime="20230714 15:51:03.648" endtime="20230714 15:51:05.742"/>
+<msg timestamp="20230714 17:27:29.346" level="INFO">Clicking element 'xpath=//div[@aria-labelledby="mui-component-select-status"]'.</msg>
+<status status="PASS" starttime="20230714 17:27:29.346" endtime="20230714 17:27:31.432"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//li[@class="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-6bjono"])[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:51:05.742" level="INFO">Clicking element '(//li[@class="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-6bjono"])[3]'.</msg>
-<status status="PASS" starttime="20230714 15:51:05.742" endtime="20230714 15:51:07.818"/>
+<msg timestamp="20230714 17:27:31.432" level="INFO">Clicking element '(//li[@class="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-6bjono"])[3]'.</msg>
+<status status="PASS" starttime="20230714 17:27:31.432" endtime="20230714 17:27:33.506"/>
 </kw>
-<status status="PASS" starttime="20230714 15:51:03.648" endtime="20230714 15:51:07.818"/>
+<status status="PASS" starttime="20230714 17:27:29.346" endtime="20230714 17:27:33.506"/>
 </kw>
 <kw name="Click on 'About Project' field" library="key">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//textarea[@rows="3"]</arg>
 <arg>“Cleanliness is next to godliness,” as the saying goes, is definitely true. We should pay attention to the smallest details. We should put trash in trash cans, stop pooping in public, stop spitting, etc., because, as the saying goes, “Little drops of water make an ocean.”</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 15:51:07.820" level="INFO">Typing text '“Cleanliness is next to godliness,” as the saying goes, is definitely true. We should pay attention to the smallest details. We should put trash in trash cans, stop pooping in public, stop spitting, etc., because, as the saying goes, “Little drops of water make an ocean.”' into text field 'xpath=//textarea[@rows="3"]'.</msg>
-<status status="PASS" starttime="20230714 15:51:07.818" endtime="20230714 15:51:11.575"/>
+<msg timestamp="20230714 17:27:33.509" level="INFO">Typing text '“Cleanliness is next to godliness,” as the saying goes, is definitely true. We should pay attention to the smallest details. We should put trash in trash cans, stop pooping in public, stop spitting, etc., because, as the saying goes, “Little drops of water make an ocean.”' into text field 'xpath=//textarea[@rows="3"]'.</msg>
+<status status="PASS" starttime="20230714 17:27:33.506" endtime="20230714 17:27:37.239"/>
 </kw>
-<status status="PASS" starttime="20230714 15:51:07.818" endtime="20230714 15:51:11.575"/>
+<status status="PASS" starttime="20230714 17:27:33.506" endtime="20230714 17:27:37.239"/>
 </kw>
 <kw name="Clck on upload icon under Attach Media" library="key">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 15:51:11.575" endtime="20230714 15:51:13.637"/>
+<status status="PASS" starttime="20230714 17:27:37.240" endtime="20230714 17:27:39.344"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230714 15:51:17.638" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20230714 15:51:13.637" endtime="20230714 15:51:17.638"/>
+<msg timestamp="20230714 17:27:43.345" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230714 17:27:39.344" endtime="20230714 17:27:43.345"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:51:17.638" level="INFO">Clicking element 'xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]'.</msg>
-<status status="PASS" starttime="20230714 15:51:17.638" endtime="20230714 15:51:19.695"/>
+<msg timestamp="20230714 17:27:43.345" level="INFO">Clicking element 'xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]'.</msg>
+<status status="PASS" starttime="20230714 17:27:43.345" endtime="20230714 17:27:45.403"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]</arg>
 <arg>C:\Users\Suhas.Panhalkar\Downloads\Modiji.png</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20230714 15:51:19.695" level="INFO">Sending C:\Users\Suhas.Panhalkar\OneDrive - Reliance Corporate IT Park Limited\Documents\GitHub\MP_Demo_TC\mp demo automation\UsersSuhas.PanhalkarDownloadsModiji.png to browser.</msg>
-<status status="PASS" starttime="20230714 15:51:19.695" endtime="20230714 15:51:21.775"/>
+<msg timestamp="20230714 17:27:45.403" level="INFO">Sending C:\Users\Suhas.Panhalkar\OneDrive - Reliance Corporate IT Park Limited\Documents\GitHub\MP_Demo_TC\mp demo automation\UsersSuhas.PanhalkarDownloadsModiji.png to browser.</msg>
+<status status="PASS" starttime="20230714 17:27:45.403" endtime="20230714 17:27:47.481"/>
 </kw>
-<status status="PASS" starttime="20230714 15:51:11.575" endtime="20230714 15:51:21.775"/>
+<status status="PASS" starttime="20230714 17:27:37.240" endtime="20230714 17:27:47.481"/>
 </kw>
 <kw name="Click on 'SUBMIT' button" library="key">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]</arg>
 <arg>SUBMIT</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 15:51:21.775" level="INFO">Verifying element 'xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]' contains exact text 'SUBMIT'.</msg>
-<status status="PASS" starttime="20230714 15:51:21.775" endtime="20230714 15:51:23.838"/>
+<msg timestamp="20230714 17:27:47.481" level="INFO">Verifying element 'xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]' contains exact text 'SUBMIT'.</msg>
+<status status="PASS" starttime="20230714 17:27:47.481" endtime="20230714 17:27:49.526"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 15:51:23.838" level="INFO">Clicking button 'xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]'.</msg>
-<status status="PASS" starttime="20230714 15:51:23.838" endtime="20230714 15:51:28.984"/>
+<msg timestamp="20230714 17:27:49.526" level="INFO">Clicking button 'xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]'.</msg>
+<status status="PASS" starttime="20230714 17:27:49.526" endtime="20230714 17:27:54.684"/>
 </kw>
-<status status="PASS" starttime="20230714 15:51:21.775" endtime="20230714 15:51:28.984"/>
+<status status="PASS" starttime="20230714 17:27:47.481" endtime="20230714 17:27:54.684"/>
 </kw>
 <kw name="View the created development project under &quot;Development Project&quot;" library="key">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=(//div[@class="MuiGrid-root MuiGrid-container css-1d3bbye"])[5]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230714 15:51:28.984" endtime="20230714 15:51:31.294"/>
+<status status="PASS" starttime="20230714 17:27:54.684" endtime="20230714 17:27:56.997"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=(//div[@class="anotwe"]/div[2]/button)[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 15:51:31.294" level="INFO">Clicking element 'xpath=(//div[@class="anotwe"]/div[2]/button)[3]'.</msg>
-<msg timestamp="20230714 15:51:34.592" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230714 15:51:34.592" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium button-tr-citizen css-1ujsas3" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (870, 330). Other element would receive the click: &lt;div class="MuiGrid-root MuiGrid-container css-1t9m8lh"&gt;...&lt;/div&gt;
+<msg timestamp="20230714 17:27:56.997" level="INFO">Clicking element 'xpath=(//div[@class="anotwe"]/div[2]/button)[3]'.</msg>
+<msg timestamp="20230714 17:28:00.307" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230714 17:28:00.307" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium button-tr-citizen css-1ujsas3" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (870, 330). Other element would receive the click: &lt;div class="MuiGrid-root MuiGrid-container css-1t9m8lh"&gt;...&lt;/div&gt;
   (Session info: chrome=113.0.5672.93)
 Stacktrace:
 Backtrace:
-	GetHandleVerifier [0x00468893+48451]
-	(No symbol) [0x003FB8A1]
-	(No symbol) [0x00305058]
-	(No symbol) [0x00334BA4]
-	(No symbol) [0x003336E8]
-	(No symbol) [0x00331EEB]
-	(No symbol) [0x003312FE]
-	(No symbol) [0x00329AAC]
-	(No symbol) [0x0034A2BC]
-	(No symbol) [0x00329586]
-	(No symbol) [0x0034A614]
-	(No symbol) [0x0035C482]
-	(No symbol) [0x0034A0B6]
-	(No symbol) [0x00327E08]
-	(No symbol) [0x00328F2D]
-	GetHandleVerifier [0x006C8E3A+2540266]
-	GetHandleVerifier [0x00708959+2801161]
-	GetHandleVerifier [0x0070295C+2776588]
-	GetHandleVerifier [0x004F2280+612144]
-	(No symbol) [0x00404F6C]
-	(No symbol) [0x004011D8]
-	(No symbol) [0x004012BB]
-	(No symbol) [0x003F4857]
+	GetHandleVerifier [0x004E8893+48451]
+	(No symbol) [0x0047B8A1]
+	(No symbol) [0x00385058]
+	(No symbol) [0x003B4BA4]
+	(No symbol) [0x003B36E8]
+	(No symbol) [0x003B1EEB]
+	(No symbol) [0x003B12FE]
+	(No symbol) [0x003A9AAC]
+	(No symbol) [0x003CA2BC]
+	(No symbol) [0x003A9586]
+	(No symbol) [0x003CA614]
+	(No symbol) [0x003DC482]
+	(No symbol) [0x003CA0B6]
+	(No symbol) [0x003A7E08]
+	(No symbol) [0x003A8F2D]
+	GetHandleVerifier [0x00748E3A+2540266]
+	GetHandleVerifier [0x00788959+2801161]
+	GetHandleVerifier [0x0078295C+2776588]
+	GetHandleVerifier [0x00572280+612144]
+	(No symbol) [0x00484F6C]
+	(No symbol) [0x004811D8]
+	(No symbol) [0x004812BB]
+	(No symbol) [0x00474857]
 	BaseThreadInitThunk [0x761000C9+25]
 	RtlGetAppContainerNamedObjectPath [0x772E7B4E+286]
 	RtlGetAppContainerNamedObjectPath [0x772E7B1E+238]
 </msg>
-<status status="FAIL" starttime="20230714 15:51:31.294" endtime="20230714 15:51:34.674"/>
+<status status="FAIL" starttime="20230714 17:27:56.997" endtime="20230714 17:28:00.338"/>
 </kw>
-<status status="FAIL" starttime="20230714 15:51:28.984" endtime="20230714 15:51:34.674"/>
+<status status="FAIL" starttime="20230714 17:27:54.684" endtime="20230714 17:28:00.338"/>
 </kw>
 <kw name="End TestCase" library="common">
-<status status="NOT RUN" starttime="20230714 15:51:34.674" endtime="20230714 15:51:34.674"/>
+<status status="NOT RUN" starttime="20230714 17:28:00.338" endtime="20230714 17:28:00.338"/>
 </kw>
-<status status="FAIL" starttime="20230714 15:50:05.785" endtime="20230714 15:51:34.674">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium button-tr-citizen css-1ujsas3" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (870, 330). Other element would receive the click: &lt;div class="MuiGrid-root MuiGrid-container css-1t9m8lh"&gt;...&lt;/div&gt;
+<status status="FAIL" starttime="20230714 17:26:33.176" endtime="20230714 17:28:00.338">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium button-tr-citizen css-1ujsas3" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (870, 330). Other element would receive the click: &lt;div class="MuiGrid-root MuiGrid-container css-1t9m8lh"&gt;...&lt;/div&gt;
   (Session info: chrome=113.0.5672.93)
 Stacktrace:
 Backtrace:
-	GetHandleVerifier [0x00468893+48451]
-	(No symbol) [0x003FB8A1]
-	(No symbol) [0x00305058]
-	(No symbol) [0x00334BA4]
-	(No symbol) [0x003336E8]
-	(No symbol) [0x00331EEB]
-	(No symbol) [0x003312FE]
-	(No symbol) [0x00329AAC]
-	(No symbol) [0x0034A2BC]
-	(No symbol) [0x00329586]
-	(No symbol) [0x0034A614]
-	(No symbol) [0x0035C482]
-	(No symbol) [0x0034A0B6]
-	(No symbol) [0x00327E08]
-	(No symbol) [0x00328F2D]
-	GetHandleVerifier [0x006C8E3A+2540266]
-	GetHandleVerifier [0x00708959+2801161]
-	GetHandleVerifier [0x0070295C+2776588]
-	GetHandleVerifier [0x004F2280+612144]
-	(No symbol) [0x00404F6C]
-	(No symbol) [0x004011D8]
-	(No symbol) [0x004012BB]
-	(No symbol) [0x003F4857]
+	GetHandleVerifier [0x004E8893+48451]
+	(No symbol) [0x0047B8A1]
+	(No symbol) [0x00385058]
+	(No symbol) [0x003B4BA4]
+	(No symbol) [0x003B36E8]
+	(No symbol) [0x003B1EEB]
+	(No symbol) [0x003B12FE]
+	(No symbol) [0x003A9AAC]
+	(No symbol) [0x003CA2BC]
+	(No symbol) [0x003A9586]
+	(No symbol) [0x003CA614]
+	(No symbol) [0x003DC482]
+	(No symbol) [0x003CA0B6]
+	(No symbol) [0x003A7E08]
+	(No symbol) [0x003A8F2D]
+	GetHandleVerifier [0x00748E3A+2540266]
+	GetHandleVerifier [0x00788959+2801161]
+	GetHandleVerifier [0x0078295C+2776588]
+	GetHandleVerifier [0x00572280+612144]
+	(No symbol) [0x00484F6C]
+	(No symbol) [0x004811D8]
+	(No symbol) [0x004812BB]
+	(No symbol) [0x00474857]
 	BaseThreadInitThunk [0x761000C9+25]
 	RtlGetAppContainerNamedObjectPath [0x772E7B4E+286]
 	RtlGetAppContainerNamedObjectPath [0x772E7B1E+238]
 </status>
 </test>
-<status status="FAIL" starttime="20230714 15:50:05.252" endtime="20230714 15:51:34.674"/>
+<status status="FAIL" starttime="20230714 17:26:32.657" endtime="20230714 17:28:00.354"/>
 </suite>
 <statistics>
 <total>

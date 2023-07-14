@@ -13,7 +13,8 @@ TestCase ID:147590
     Verify Url after login
     Close what's new popup
     Create a project under "Development Project"
-    Enter title and date for the project 
+    Enter title for the project 
+    Select date for the project
     Select one of the options from the dropdown
     Click on 'About Project' field
     Clck on upload icon under Attach Media

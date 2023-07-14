@@ -3,6 +3,7 @@ Library                                 SeleniumLibrary
 Variables                               variable.yaml
 Resource                                common.robot
 
+
 *** Keywords ***
 
 Click on Login
@@ -41,20 +42,29 @@ Close what's new popup
 Create a project under "Development Project" 
     Click Element     xpath=(//li[@class="justify-content-between"]/button)[2]
     #Scroll to development projet
-    Scroll Element Into View    xpath=(//div[@class="MuiGrid-root MuiGrid-container css-1d3bbye"])[5]
+    Wait Until Page Contains Element    xpath=(//div[@class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7.5 css-shfgwp"])[4]
+    Scroll Element Into View    xpath=(//div[@class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7.5 css-shfgwp"])[4]
     #Click on add new button
     Click Element    xpath=(//div[@class="anotwe"]/div[1]/button)[3]
 
-Enter title and date for the project
+Enter title for the project
     #Enter title
     Input Text    xpath=//input[@class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng"]    Clean Mumbai
+
+Select date for the project
+    #Select Year dropdown
+    Click Element    xpath://button[@aria-label="Choose date"]
+    Click element	xpath=//div[@class="MuiPickersCalendarHeader-labelContainer css-l0iinn"]
+    #Select Year 
+    Click element   xpath=//button[contains(text(),"2024")]
     #Select date
-    Click Button    xpath=//div[@class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1nvf7g0"]/button
-    Click Button    xpath=(//button[@class="MuiButtonBase-root MuiPickersDay-root MuiPickersDay-dayWithMargin css-ub1r1"])[13]
+    Click element   xpath=//button[@role="gridcell"][contains(text(),"8")]
+    
 
 Select one of the options from the dropdown
-    #click on dropdwon and select any one option
+    #click on dropdwon 
     Click Element    xpath=//div[@aria-labelledby="mui-component-select-status"] 
+    #Select any one option from dd
     Click Element    (//li[@class="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-6bjono"])[3]
 
 Click on 'About Project' field
