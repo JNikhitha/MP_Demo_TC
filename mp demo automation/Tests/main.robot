@@ -2,7 +2,7 @@
 Resource           ../Resource/common.robot
 Resource           ../Resource/key.robot
 #cd mp demo automation
-#robot -d results /Tests/main.robot
+#robot -d results Tests/main.robot
 
 *** Test Cases ***
 TestCase ID:147590
@@ -12,4 +12,11 @@ TestCase ID:147590
     Enter credentials and login
     Verify Url after login
     Close what's new popup
+    Create a project under "Development Project"
+    Enter title and date for the project 
+    Select one of the options from the dropdown
+    Click on 'About Project' field
+    Clck on upload icon under Attach Media
+    Click on 'SUBMIT' button
+    View the created development project under "Development Project" 
     End TestCase

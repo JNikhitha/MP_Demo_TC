@@ -11,7 +11,6 @@ Begin TestCase
     Set Selenium Speed              1s
 
 
-
 End TestCase
     Sleep                           1s
     Close All Browsers
