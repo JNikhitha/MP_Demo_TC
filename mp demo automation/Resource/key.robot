@@ -2,7 +2,8 @@
 Library                                 SeleniumLibrary
 Variables                               variable.yaml
 Resource                                common.robot
-
+Library                                 RPA.Windows    
+Library                                 RPA.Desktop
 
 *** Keywords ***
 
@@ -74,19 +75,28 @@ Click on 'About Project' field
 Clck on upload icon under Attach Media
     #verification of upload file option
     Wait Until Element Is Visible    xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]
-    Sleep    4s
+    Sleep    1s
     #click on upload icon and choose file
     Click Element    xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]
-    Choose File    xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]    C:\Users\Suhas.Panhalkar\Downloads\Modiji.png  
-
+    #RPA Implementation
+    RPA.Windows.Control Window        Open
+    RPA.Windows.Maximize Window       Open
+    RPA.Windows.Double Click          Camera Roll (pinned)
+    RPA.Windows.Control Window        Open
+    RPA.Windows.Double Click          question_mark.png
+   
 Click on 'SUBMIT' button
     #Verify button text
     Element Text Should Be    xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]    SUBMIT
     #Click on 'SUBMIT' button
+    Sleep    2s
+    Scroll Element Into View    xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]   
     Click Button    xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[1]
 
 View the created development project under "Development Project" 
+    Sleep    4s
     #Scroll to development projet
     Scroll Element Into View    xpath=(//div[@class="MuiGrid-root MuiGrid-container css-1d3bbye"])[5]
     #Click on view all button
     Click Element    xpath=(//div[@class="anotwe"]/div[2]/button)[3]
+    
