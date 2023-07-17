@@ -81,9 +81,9 @@ Clck on upload icon under Attach Media
     #RPA Implementation
     RPA.Windows.Control Window        Open
     RPA.Windows.Maximize Window       Open
-    RPA.Windows.Double Click          Camera Roll (pinned)
+    RPA.Windows.Double Click          PM Awas Yojana (pinned)
     RPA.Windows.Control Window        Open
-    RPA.Windows.Double Click          question_mark.png
+    RPA.Windows.Double Click          PM_Awas.jpg
    
 Click on 'SUBMIT' button
     #Verify button text
