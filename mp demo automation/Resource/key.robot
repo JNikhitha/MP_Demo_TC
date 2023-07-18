@@ -23,6 +23,7 @@ Enter credentials and login
     #verify url
     Location Should Be                   ${url}
     #verify if page contains 'Mera Saansad' link
+    Sleep    2s
     Wait Until Page Contains Element     xpath://a//span[@data-hover="Mera saansad"]
     #click on 'Mera Saansad' link
     Click Element                        xpath://div[@class="app"]//a
@@ -30,7 +31,7 @@ Enter credentials and login
 Verify Url after login
     #switch tab
     Switch Window                        locator=NEW
-    Sleep    4s
+    Sleep    20s
     #verify url
     Location should be                   ${mpurl}
 
@@ -44,6 +45,7 @@ Create a project under "Development Project"
     Click Element     xpath=(//li[@class="justify-content-between"]/button)[2]
     #Scroll to development projet
     Wait Until Page Contains Element    xpath=(//div[@class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7.5 css-shfgwp"])[4]
+    Sleep    6s
     Scroll Element Into View    xpath=(//div[@class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7.5 css-shfgwp"])[4]
     #Click on add new button
     Click Element    xpath=(//div[@class="anotwe"]/div[1]/button)[3]
@@ -99,4 +101,30 @@ View the created development project under "Development Project"
     Scroll Element Into View    xpath=(//div[@class="MuiGrid-root MuiGrid-container css-1d3bbye"])[5]
     #Click on view all button
     Click Element    xpath=(//div[@class="anotwe"]/div[2]/button)[3]
+    Sleep    4s
+    #Development Project Should contain the name of the recently created Initiative
+    Element Text Should Be    xpath=//div[@class="mt-n4"]/p[1]/b[1]    Clean Mumbai
+    #Click on the Project
+    Click Element    //div[@class="itemfixed4 customscroll"]/div[1]
+    #Verify Button text
+    Element Text Should Be    xpath=//div[@class="MuiDialogActions-root MuiDialogActions-spacing css-1ssxhc2"]/button[1]    EDIT  
+    #Click on Edit Button
+    Click Element    xpath=//div[@class="MuiDialogActions-root MuiDialogActions-spacing css-1ssxhc2"]/button[1]
+    # #Delete created Project
+    # Click Element    xpath=//div[@class="MuiBox-root css-yfwgvy"]/button[2]
+    # #Confirm you want to Delete
+    # Click Element    xpath=//div[@class="MuiDialogActions-root MuiDialogActions-spacing css-pobf8w"]/button
+
+Uploading More Images
+    #click on upload icon and choose file
+    Click Element    xpath=//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18gpjm4"]
+    #RPA Implementation
+    RPA.Windows.Control Window        Open
+    RPA.Windows.Maximize Window       Open
+    RPA.Windows.Double Click          PM Awas Yojana (pinned)
+    RPA.Windows.Click                 PM_Awas.jpg
+    RPA.Desktop.Press Keys            CTRL    A
+    RPA.Windows.Control Window        Open
+    RPA.Windows.Double Click          Open
+
     

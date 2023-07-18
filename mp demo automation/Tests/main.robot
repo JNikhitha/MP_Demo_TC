@@ -20,4 +20,6 @@ TestCase ID:147590
     Clck on upload icon under Attach Media
     Click on 'SUBMIT' button
     View the created development project under "Development Project" 
+    Uploading More Images
     End TestCase
+    
