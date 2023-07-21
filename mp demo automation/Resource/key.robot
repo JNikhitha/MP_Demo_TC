@@ -103,7 +103,7 @@ View the created development project under "Development Project"
     Click Element    xpath=(//div[@class="anotwe"]/div[2]/button)[3]
     Sleep    4s
     #Development Project Should contain the name of the recently created Initiative
-    Element Text Should Be    xpath=//div[@class="mt-n4"]/p[1]/b[1]    Clean Mumbai
+    Element Text Should Be    xpath=(//div[@class="mt-n2-1"]//p//b)[1]    Clean Mumbai
     #Click on the Project
     Click Element    //div[@class="itemfixed4 customscroll"]/div[1]
     #Verify Button text
@@ -125,6 +125,6 @@ Uploading More Images
     RPA.Windows.Click                 PM_Awas.jpg
     RPA.Desktop.Press Keys            CTRL    A
     RPA.Windows.Control Window        Open
-    RPA.Windows.Double Click          Open
+    RPA.Windows.Click          Open
 
     
